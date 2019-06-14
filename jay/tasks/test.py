@@ -1,14 +1,7 @@
-import datetime
-# import requests
-import time
-import json
-import re
-
 from example_celery import celery_app
 from django.conf import settings
 
-@celery_app.task(bind=True, max_retries=3, default_retry_delay=30)  # Retry in 30 s
-def test(self):
+def test():
     celery.delay()
 
 
@@ -28,7 +21,7 @@ def celery(self):
         print('success')
     except Exception as exc:
         # print(exc)
-        raise self.retry(countdown=15)
+        raise self.retry()
 
 
 
