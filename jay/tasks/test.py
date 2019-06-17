@@ -27,5 +27,5 @@ def celery(self):
 
 @celery_app.task(bind=True, max_retries=3, default_retry_delay=30)  # Retry in 30 s
 def celery_1(self):
-    print('TEST adsad5a1s45d45a4d5a14s5d45as1d5sa1d3a12d1a3da2')
+    print('TEST cxcxcxcxcxcxcxcxcxcxccxcxcxcxcxcxcxcxcxcxcxcxcxcxcx=c=x=c=x=cx=c=x=c=x=c=xc=x=c=x')
     
