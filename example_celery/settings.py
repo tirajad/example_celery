@@ -17,11 +17,9 @@ try:
 except ImportError:
     pass
 
-USE_CELERY = getattr(configs, 'USE_CELERY', False)
 BROKER_URL = getattr(configs, 'BROKER_URL', 'redis://localhost:6379/0')
 
-# CELERY_ACCEPT_CONTENT = ['json', 'msgpack', 'yaml']
-# CELERY_TASK_SERIALIZER = 'json'
+
 CELERY_TIMEZONE = 'Asia/Bangkok'
 CELERY_CREATE_MISSING_QUEUES = True
 
